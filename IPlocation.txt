@@ -1,20 +1,97 @@
-103.29.148.0/22,Indonesia,Surabaya,-7.2575,112.7521
-103.29.152.0/22,Indonesia,Malang,-7.9666,112.6326
-103.29.160.0/21,Indonesia,Denpasar,-8.65,115.2167
-36.66.0.0/16,Indonesia,Jakarta,-6.2088,106.8456
-36.67.0.0/16,Indonesia,Bandung,-6.9175,107.6191
-114.4.128.0/17,Indonesia,Palembanag,-2.9761,104.7754
-118.96.0.0/17,Indonesia,Makassar,-5.1477,119.4327
-118.96.128.0/17,Indonesia,Manado,1.4927,124.842
-125.160.0.0/16,Indonesia,Semarang,-6.9667,110.4167
-180.244.0.0/17,Indonesia,Yogyakarta,-7.7956,110.3695
-202.43.94.0/23,Indonesia,Medan,3.5952,98.6722
-36.74.0.0/16,Indonesia,Bekasi,-6.2383,106.9756
-180.253.0.0/17,Indonesia,Padang,-0.9492,100.3543
-103.247.8.0/21,Indonesia,Balikpapan,-1.2654,116.8312
-180.246.0.0/16,Indonesia,Pontianak,-0.0263,109.3425
-202.67.40.0/21,Indonesia,Banjarmasin,-3.3194,114.5908
-202.80.208.0/20,Indonesia,Samarinda,-0.5022,117.1537
-36.80.0.0/14,Indonesia,Tangerang,-6.17,106.64
-125.161.0.0/16,Indonesia,Cirebon,-6.732,108.5523
-114.5.0.0/17,Indonesia,Bogor,-6.595,106.8167
+103.4.57.0/24,Indonesia,Jakarta,DKI Jakarta,-6.2088,106.8456
+36.66.12.0/20,Indonesia,Bandung,Jawa Barat,-6.9147,107.6098
+114.4.128.0/17,Indonesia,Bogor,Jawa Barat,-6.595,106.8167
+125.160.0.0/16,Indonesia,Semarang,Jawa Tengah,-6.9667,110.4167
+180.244.0.0/17,Indonesia,Yogyakarta,DI Yogyakarta,-7.7956,110.3695
+103.247.8.0/21,Indonesia,Balikpapan,Kalimantan Timur,-1.2654,116.8312
+202.43.94.0/23,Indonesia,Medan,Sumatera Utara,3.5952,98.6722
+180.246.0.0/16,Indonesia,Palembang,Sumatera Selatan,-2.9909,104.7566
+202.67.40.0/21,Indonesia,Pekanbaru,Riau,0.5333,101.45
+36.67.0.0/16,Indonesia,Surabaya,Jawa Timur,-7.2575,112.7521
+103.29.148.0/22,Indonesia,Malang,Jawa Timur,-7.9797,112.6304
+118.96.0.0/17,Indonesia,Makassar,Sulawesi Selatan,-5.1477,119.4327
+118.96.128.0/17,Indonesia,Manado,Sulawesi Utara,1.4748,124.8421
+103.10.124.0/22,Indonesia,Tangerang,Banten,-6.17,106.64
+103.29.152.0/22,Indonesia,Depok,Jawa Barat,-6.4025,106.7942
+36.74.0.0/16,Indonesia,Bekasi,Jawa Barat,-6.2416,106.9924
+203.130.208.0/20,Indonesia,Cimahi,Jawa Barat,-6.8728,107.5421
+114.5.0.0/17,Indonesia,Cirebon,Jawa Barat,-6.732,108.5523
+103.16.32.0/21,Indonesia,Padang,Sumatera Barat,-0.9492,100.3543
+103.23.200.0/22,Indonesia,Samarinda,Kalimantan Timur,-0.5022,117.1537
+202.80.208.0/20,Indonesia,Banjarmasin,Kalimantan Selatan,-3.3274,114.5908
+36.80.0.0/14,Indonesia,Pontianak,Kalimantan Barat,-0.0263,109.3425
+180.253.0.0/17,Indonesia,Manado,Sulawesi Utara,1.4748,124.8421
+125.161.0.0/16,Indonesia,Bogor,Jawa Barat,-6.595,106.8167
+36.85.0.0/16,Indonesia,Denpasar,Bali,-8.65,115.2167
+202.43.116.0/23,Indonesia,Bandung,Jawa Barat,-6.9147,107.6098
+103.17.60.0/22,Indonesia,Yogyakarta,DI Yogyakarta,-7.7956,110.3695
+103.86.228.0/22,Indonesia,Palembang,Sumatera Selatan,-2.9909,104.7566
+202.162.96.0/19,Indonesia,Jakarta,DKI Jakarta,-6.2088,106.8456
+36.83.0.0/16,Indonesia,Bekasi,Jawa Barat,-6.2416,106.9924
+103.224.24.0/22,Indonesia,Surabaya,Jawa Timur,-7.2575,112.7521
+103.129.220.0/22,Indonesia,Balikpapan,Kalimantan Timur,-1.2654,116.8312
+103.147.154.0/23,Indonesia,Medan,Sumatera Utara,3.5952,98.6722
+103.168.96.0/22,Indonesia,Tangerang,Banten,-6.17,106.64
+103.184.60.0/22,Indonesia,Cimahi,Jawa Barat,-6.8728,107.5421
+103.85.204.0/22,Indonesia,Semarang,Jawa Tengah,-6.9667,110.4167
+103.80.160.0/22,Indonesia,Bandung,Jawa Barat,-6.9147,107.6098
+103.150.88.0/22,Indonesia,Depok,Jawa Barat,-6.4025,106.7942
+103.145.206.0/23,Indonesia,Bogor,Jawa Barat,-6.595,106.8167
+103.145.204.0/23,Indonesia,Yogyakarta,DI Yogyakarta,-7.7956,110.3695
+103.145.202.0/23,Indonesia,Padang,Sumatera Barat,-0.9492,100.3543
+103.145.200.0/23,Indonesia,Manado,Sulawesi Utara,1.4748,124.8421
+103.142.198.0/23,Indonesia,Pekanbaru,Riau,0.5333,101.45
+103.142.196.0/23,Indonesia,Samarinda,Kalimantan Timur,-0.5022,117.1537
+103.142.194.0/23,Indonesia,Banjarmasin,Kalimantan Selatan,-3.3274,114.5908
+103.142.192.0/23,Indonesia,Denpasar,Bali,-8.65,115.2167
+103.131.234.0/23,Indonesia,Cirebon,Jawa Barat,-6.732,108.5523
+103.131.232.0/23,Indonesia,Malang,Jawa Timur,-7.9797,112.6304
+103.131.230.0/23,Indonesia,Pontianak,Kalimantan Barat,-0.0263,109.3425
+103.131.228.0/23,Indonesia,Palembang,Sumatera Selatan,-2.9909,104.7566
+103.131.226.0/23,Indonesia,Jakarta,DKI Jakarta,-6.2088,106.8456
+103.131.224.0/23,Indonesia,Bogor,Jawa Barat,-6.595,106.8167
+103.113.96.0/22,Indonesia,Semarang,Jawa Tengah,-6.9667,110.4167
+103.113.92.0/22,Indonesia,Medan,Sumatera Utara,3.5952,98.6722
+103.113.88.0/22,Indonesia,Depok,Jawa Barat,-6.4025,106.7942
+103.113.84.0/22,Indonesia,Bandung,Jawa Barat,-6.9147,107.6098
+103.113.80.0/22,Indonesia,Surabaya,Jawa Timur,-7.2575,112.7521
+103.113.76.0/22,Indonesia,Yogyakarta,DI Yogyakarta,-7.7956,110.3695
+103.113.72.0/22,Indonesia,Padang,Sumatera Barat,-0.9492,100.3543
+103.113.68.0/22,Indonesia,Balikpapan,Kalimantan Timur,-1.2654,116.8312
+103.113.64.0/22,Indonesia,Manado,Sulawesi Utara,1.4748,124.8421
+103.112.60.0/22,Indonesia,Bogor,Jawa Barat,-6.595,106.8167
+103.112.56.0/22,Indonesia,Bekasi,Jawa Barat,-6.2416,106.9924
+103.112.52.0/22,Indonesia,Tangerang,Banten,-6.17,106.64
+103.112.48.0/22,Indonesia,Cimahi,Jawa Barat,-6.8728,107.5421
+103.112.44.0/22,Indonesia,Semarang,Jawa Tengah,-6.9667,110.4167
+103.112.40.0/22,Indonesia,Yogyakarta,DI Yogyakarta,-7.7956,110.3695
+103.112.36.0/22,Indonesia,Medan,Sumatera Utara,3.5952,98.6722
+103.112.32.0/22,Indonesia,Bandung,Jawa Barat,-6.9147,107.6098
+103.112.28.0/22,Indonesia,Surabaya,Jawa Timur,-7.2575,112.7521
+103.112.24.0/22,Indonesia,Balikpapan,Kalimantan Timur,-1.2654,116.8312
+103.112.20.0/22,Indonesia,Denpasar,Bali,-8.65,115.2167
+103.112.16.0/22,Indonesia,Manado,Sulawesi Utara,1.4748,124.8421
+103.112.12.0/22,Indonesia,Palembang,Sumatera Selatan,-2.9909,104.7566
+103.112.8.0/22,Indonesia,Padang,Sumatera Barat,-0.9492,100.3543
+103.112.4.0/22,Indonesia,Samarinda,Kalimantan Timur,-0.5022,117.1537
+103.112.0.0/22,Indonesia,Yogyakarta,DI Yogyakarta,-7.7956,110.3695
+103.111.60.0/22,Indonesia,Padang,Sumatera Barat,-0.9492,100.3543
+103.111.56.0/22,Indonesia,Samarinda,Kalimantan Timur,-0.5022,117.1537
+103.111.52.0/22,Indonesia,Denpasar,Bali,-8.65,115.2167
+103.111.48.0/22,Indonesia,Bogor,Jawa Barat,-6.595,106.8167
+103.111.44.0/22,Indonesia,Bandung,Jawa Barat,-6.9147,107.6098
+103.111.40.0/22,Indonesia,Jakarta,DKI Jakarta,-6.2088,106.8456
+103.111.36.0/22,Indonesia,Surabaya,Jawa Timur,-7.2575,112.7521
+103.111.32.0/22,Indonesia,Palembang,Sumatera Selatan,-2.9909,104.7566
+103.111.28.0/22,Indonesia,Yogyakarta,DI Yogyakarta,-7.7956,110.3695
+103.111.24.0/22,Indonesia,Balikpapan,Kalimantan Timur,-1.2654,116.8312
+103.111.20.0/22,Indonesia,Tangerang,Banten,-6.17,106.64
+103.111.16.0/22,Indonesia,Bekasi,Jawa Barat,-6.2416,106.9924
+103.111.12.0/22,Indonesia,Medan,Sumatera Utara,3.5952,98.6722
+103.111.8.0/22,Indonesia,Semarang,Jawa Tengah,-6.9667,110.4167
+103.111.4.0/22,Indonesia,Manado,Sulawesi Utara,1.4748,124.8421
+103.111.0.0/22,Indonesia,Cirebon,Jawa Barat,-6.732,108.5523
+103.110.252.0/22,Indonesia,Depok,Jawa Barat,-6.4025,106.7942
+103.110.248.0/22,Indonesia,Pontianak,Kalimantan Barat,-0.0263,109.3425
+103.110.244.0/22,Indonesia,Padang,Sumatera Barat,-0.9492,100.3543
+103.110.240.0/22,Indonesia,Yogyakarta,DI Yogyakarta,-7.7956,110.3695

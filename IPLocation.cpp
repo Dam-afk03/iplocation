@@ -44,15 +44,15 @@ bool ipLocationSearch(const string& filename, unsigned int ip_num) {
     while (getline(file, line)) {
         stringstream ss(line);
         string field;
-        string fields[5];
+        string fields[6];
         int field_count = 0;
 
         
-        while (getline(ss, field, ',') && field_count < 5) {
+        while (getline(ss, field, ',') && field_count < 6) {
             fields[field_count++] = field;
         }
 
-        if (field_count >= 5) {
+        if (field_count >= 6) {
             string cidr = fields[0];
             size_t slash = cidr.find('/');
             if (slash == string::npos) continue; 
@@ -66,8 +66,9 @@ bool ipLocationSearch(const string& filename, unsigned int ip_num) {
             if (ip_num >= start_ip && ip_num <= end_ip) {
                 cout << "Negara : " << fields[1] << "\n";
                 cout << "Kota   : " << fields[2] << "\n";
-                cout << "Latitude : " << fields[3] << "\n";
-                cout << "longitude : " << fields[4] << "\n";
+                cout << "Wilayah : " << fields[3] << "\n";
+                cout << "Latitude : " << fields[4] << "\n";
+                cout << "longitude : " << fields[5] << "\n";
                 return true;
             }
         }
@@ -81,7 +82,7 @@ int main() {
     string ip_input;
     string pilihan;
     
-    cout << "Masukkan IP (atau 'exit'): ";
+    cout << "Masukkan IP atau 'exit' untuk keluar dari program: ";
     while (cin >> ip_input && ip_input != "exit") {
         try {
             unsigned int ip_num = ip_to_int(ip_input);
@@ -90,7 +91,7 @@ int main() {
                 cout << "Lokasi tidak ditemukan untuk IP tersebut.\n";
             }
             while (true){
-            cout << "lanjut utnuk cek IP lain y/t: ";
+            cout << "lanjut untuk cek IP lain y/t: ";
             cin >> pilihan;
                 if (pilihan == "y" || pilihan == "Y"){
                     break;
@@ -107,7 +108,7 @@ int main() {
             cerr << "Error: " << e.what() << "\n";
         }
 
-        cout << "\nMasukkan IP (atau 'exit'): ";
+        cout << "Masukkan IP atau 'exit' untuk keluar dari program: \n" ;
     }
 
     return 0;
