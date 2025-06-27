@@ -14,25 +14,25 @@ void validasiIp(const string& part){
             throw runtime_error("IP tidak valid");
 }
 
-unsigned int ubahkeAngkaip(const string& ip) {
-    unsigned int ip_num = 0;
-    size_t pos = 0, prev = 0;
+unsigned int ubahKeAngkaIp(const string& ip) {
+    unsigned int ipAngka = 0;
+    size_t posisi = 0, awal = 0;
 
     for (int i = 0; i < 4; ++i) {
-        pos = ip.find('.', prev);
-        string part = (pos == string::npos) ? ip.substr(prev) : ip.substr(prev, pos - prev);
+        posisi = ip.find('.', awal);
+        string part = (posisi == string::npos) ? ip.substr(awal) : ip.substr(awal, posisi - awal);
 
         validasiIp(part);
 
         int octet = stoi(part);
-        ip_num = (ip_num << 8) | octet;
-        prev = pos + 1;
+        ipAngka = (ipAngka << 8) | octet;
+        awal = posisi + 1;
     }
 
-    return ip_num;
+    return ipAngka;
 }
 
-bool ipLocationSearch(const string& filename, unsigned int ip_num) {
+bool carilokasiIP(const string& filename, unsigned int ipAngka) {
     ifstream file(filename);
     
     if (!file.is_open()) {
@@ -44,31 +44,31 @@ bool ipLocationSearch(const string& filename, unsigned int ip_num) {
     while (getline(file, line)) {
         stringstream ss(line);
         string field;
-        string fields[6];
-        int field_count = 0;
+        string data[6];
+        int hitung = 0;
 
         
-        while (getline(ss, field, ',') && field_count < 6) {
-            fields[field_count++] = field;
+        while (getline(ss, field, ',') && hitung < 6) {
+            data[hitung++] = field;
         }
 
-        if (field_count >= 6) {
-            string cidr = fields[0];
+        if (hitung >= 6) {
+            string cidr = data[0];
             size_t slash = cidr.find('/');
             if (slash == string::npos) continue; 
 
-            string ip_part = cidr.substr(0, slash);
+            string ipDasar = cidr.substr(0, slash);
             int prefix = stoi(cidr.substr(slash + 1));
 
-            unsigned int start_ip = ubahkeAngkaip(ip_part);
-            unsigned int end_ip = start_ip | ((1u << (32 - prefix)) - 1);
+            unsigned int ipAwal = ubahKeAngkaIp(ipDasar);
+            unsigned int ipAkhir = ipAwal | ((1u << (32 - prefix)) - 1);
 
-            if (ip_num >= start_ip && ip_num <= end_ip) {
-                cout << "Negara : " << fields[1] << "\n";
-                cout << "Kota   : " << fields[2] << "\n";
-                cout << "Wilayah : " << fields[3] << "\n";
-                cout << "Latitude : " << fields[4] << "\n";
-                cout << "longitude : " << fields[5] << "\n";
+            if (ipAngka >= ipAwal && ipAngka <= ipAkhir) {
+                cout << "Negara : " << data[1] << "\n";
+                cout << "Kota   : " << data[2] << "\n";
+                cout << "Wilayah : " << data[3] << "\n";
+                cout << "Latitude : " << data[4] << "\n";
+                cout << "longitude : " << data[5] << "\n";
                 return true;
             }
         }
@@ -85,10 +85,10 @@ int main() {
     cout << "Masukkan IP atau 'exit' untuk keluar dari program: ";
     while (cin >> ip_input && ip_input != "exit") {
         try {
-            unsigned int ip_num = ubahkeAngkaip(ip_input);
+            unsigned int ipAngka = ubahKeAngkaIp(ip_input);
             
-            if (!ipLocationSearch(filename, ip_num)) {
-                cout << "Lokasi tidak ditemukan untuk IP tersebut.\n";
+            if (!carilokasiIP(filename, ipAngka)) {
+                cout << "Lokasi tidak ditemukan.\n";
             }
             while (true){
             cout << "lanjut untuk cek IP lain y/t: ";
