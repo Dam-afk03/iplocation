@@ -9,18 +9,18 @@ void validasiIp(const string& part){
     if (part.empty() || part.find_first_not_of("0123456789") != string::npos)
             throw runtime_error("Format IP tidak valid");
 
-        int octet = stoi(part);
-        if (octet < 0 || octet > 255)
+        int angka = stoi(part);
+        if (angka < 0 || angka > 255)
             throw runtime_error("IP tidak valid");
 }
 
-unsigned int ip_to_int(const string& ip_str) {
+unsigned int ubahkeAngkaip(const string& ip) {
     unsigned int ip_num = 0;
     size_t pos = 0, prev = 0;
 
     for (int i = 0; i < 4; ++i) {
-        pos = ip_str.find('.', prev);
-        string part = (pos == string::npos) ? ip_str.substr(prev) : ip_str.substr(prev, pos - prev);
+        pos = ip.find('.', prev);
+        string part = (pos == string::npos) ? ip.substr(prev) : ip.substr(prev, pos - prev);
 
         validasiIp(part);
 
@@ -60,7 +60,7 @@ bool ipLocationSearch(const string& filename, unsigned int ip_num) {
             string ip_part = cidr.substr(0, slash);
             int prefix = stoi(cidr.substr(slash + 1));
 
-            unsigned int start_ip = ip_to_int(ip_part);
+            unsigned int start_ip = ubahkeAngkaip(ip_part);
             unsigned int end_ip = start_ip | ((1u << (32 - prefix)) - 1);
 
             if (ip_num >= start_ip && ip_num <= end_ip) {
@@ -85,7 +85,7 @@ int main() {
     cout << "Masukkan IP atau 'exit' untuk keluar dari program: ";
     while (cin >> ip_input && ip_input != "exit") {
         try {
-            unsigned int ip_num = ip_to_int(ip_input);
+            unsigned int ip_num = ubahkeAngkaip(ip_input);
             
             if (!ipLocationSearch(filename, ip_num)) {
                 cout << "Lokasi tidak ditemukan untuk IP tersebut.\n";
@@ -108,7 +108,7 @@ int main() {
             cerr << "Error: " << e.what() << "\n";
         }
 
-        cout << "Masukkan IP atau 'exit' untuk keluar dari program: \n" ;
+        cout << "Masukkan IP atau 'exit' untuk keluar dari program: " ;
     }
 
     return 0;
